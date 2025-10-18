@@ -1,0 +1,522 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    background-color: #1a1a1a; /* Fondo azul para el cuerpo */
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001; /* Asegúrate de que el z-index del header sea mayor que el del menú desplegable */
+    background-color: #2c2c2c;;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container .btn-menu, .logo {
+    float: left;
+    line-height: 70px; /* Ajustado para la altura del header */
+}
+
+.container .btn-menu label {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.logo h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.container .menu {
+    float: right;
+    line-height: 100px;
+}
+
+.container .menu a {
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 20px; /* Aumenté el tamaño de fuente a 20px */
+    margin-right: 5px;
+}
+
+.container .menu a:hover {
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+
+/* Estilos para el submenú */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    min-width: 160px;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu li {
+    list-style-type: none;
+}
+
+.submenu li a {
+    color: white;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.submenu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.hero {
+    color: #fff;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 20px;
+    background-color: #000000;
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden; /* Ocultar cualquier contenido que sobresalga */
+}
+
+.hero-text {
+    padding: 4rem; /* Aumentar el padding para separar más el texto de los bordes */
+    padding-top: 5px; /* Ajuste para subir el texto */
+    margin: 0; /* Quitar márgenes para asegurar que no haya espacios innecesarios */
+    overflow: hidden; /* Ocultar cualquier contenido que sobresalga */
+}
+
+.hero-text h2, .hero-text p {
+    margin: 0; /* Quitar márgenes para asegurar que no haya espacios innecesarios */
+    padding: 0; /* Quitar relleno para asegurar que no haya espacio adicional */
+    border: none; /* Quitar cualquier borde */
+}
+
+.hero-text h2 {
+    font-size: 5.5rem; /* Aumentar el tamaño del título */
+}
+
+.hero-text p {
+    font-size: 1.75rem; /* Aumentar el tamaño del párrafo */
+}
+
+.info {
+    color: black;
+    text-align: center;
+    padding: 20px;
+    background-color: #FFD700;
+    position: relative;
+    margin-top: 30px; /* Para dejar un espacio debajo de las imágenes */
+}
+
+.info h3 {
+    font-size: 2rem;
+}
+
+.info p {
+    font-size: 1.25rem;
+}
+
+.extra-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* Ajusta el margen superior según tu diseño */
+}
+
+.info-column {
+    flex: 1;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.info-column h4 {
+    font-size: 1.5rem; /* Tamaño de fuente para los títulos adicionales */
+    margin-bottom: 10px; /* Espacio inferior entre título y párrafo */
+}
+
+.conocenos {
+    color: black;
+    text-align: left;
+    padding-top: 80px;
+    padding-right: 20px; /* Ajuste el padding derecho según su diseño */
+    background-color: #FFFFFF;
+    position: relative;
+    margin-top: 50px; /* Ajustar el margen superior según su diseño */
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.conocenos-text {
+    flex: 1; /* Ocupa todo el espacio disponible verticalmente */
+    padding: 1rem; /* Ajustar el padding según su diseño */
+    max-width: 50%; /* Ancho máximo del texto */
+}
+
+.conocenos-text h2 {
+    font-size: 3.5rem; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.conocenos-text h3 {
+    font-size: 2rem; /* Tamaño del subtítulo */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.conocenos-text p {
+    font-size: 1.25rem; /* Tamaño del párrafo */
+    line-height: 1.6; /* Interlineado */
+}
+
+.image-container {
+    margin-top: 20px; /* Ajustar el margen superior según su diseño */
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* Alinear las imágenes hacia el extremo derecho */
+    gap: 20px; /* Separación entre las imágenes */
+}
+
+.image1 {
+    width: 425px;
+    height: 480px;
+    border-radius: 50% 50% 0 0; /* Forma semicircular arriba */
+    object-fit: cover;
+    margin-top: -95px; /* Mover la imagen 1 más hacia arriba o abajo ajustando este valor */
+}
+
+.image2 {
+    width: 425px;
+    height: 480px;
+    border-radius: 10px; /* Forma rectangular sin bordes */
+    object-fit: cover;
+    margin-top: -95px; /* Mover la imagen 2 más hacia arriba o abajo ajustando este valor */
+    margin-right: 50px; /* Aumentar el margen derecho para separarla más del lado derecho */
+}
+
+.image3 {
+    width: 400px;
+    height: 400px;
+    border-radius: 50% 50% 0 0; /* Forma semicircular arriba */
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.horarios {
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 40px 20px; /* Ajustar el padding según tu diseño */
+    background-color: #000; /* Fondo negro */
+    margin-top: 50px; /* Espacio superior */
+}
+
+.horarios-text {
+    max-width: 800px; /* Ancho máximo del texto */
+    margin: auto; /* Centrar el contenido */
+}
+
+.horarios-text h2 {
+    font-size: 3.5rem; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.horarios-text p {
+    font-size: 1.25rem; /* Tamaño del párrafo */
+    line-height: 1.6; /* Interlineado */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Media queries para diseño responsive */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .container .btn-menu, .logo {
+        line-height: 70px; /* Ajustado para la altura del header */
+    }
+
+    .container .menu {
+        float: none;
+        text-align: center;
+        line-height: normal;
+    }
+
+    .container .menu a {
+        display: block;
+        padding: 15px 0;
+        margin: 0;
+        border-bottom: none;
+    }
+
+    .dropdown:hover .submenu {
+        display: none;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .header .logo {
+        text-align: center;
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    .header .menu {
+        float: none;
+        text-align: center;
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image1, .image2, .image3 {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #0099cc;
+    color: #000000;
+    text-align: center;
+    font-size: 17px;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} 
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    background-color: #000; /* Fondo azul para el cuerpo */
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001; /* Asegúrate de que el z-index del header sea mayor que el del menú desplegable */
+    background-color:#1c1c1c;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container .btn-menu, .logo {
+    float: left;
+    line-height: 70px;
+}
+
+.container .btn-menu label {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.logo h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.container .menu {
+    float: right;
+    line-height: 70px;
+}
+
+.container .menu a {
+    display: inline-block;
+    padding: 0 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.container .menu a:hover {
+    color: #c7c7c7;
+}
+
+/* Estilos para el submenú */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.submenu li {
+    list-style-type: none;
+}
+
+.submenu li a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+#btn-menu {
+    display: none;
+}
+
+.container-menu {
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1500; /* Asegúrate de que el z-index del menú desplegable sea mayor que el del header */
+}
+
+#btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+    z-index: 1600; /* Asegúrate de que el z-index del menú lateral sea mayor que el del menú desplegable */
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0%);
+}
+
+.cont-menu nav {
+    transform: translateY(15%);
+}
+
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+
+.cont-menu label {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #c7c7c7;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.capa {
+    display: none;
+}
+
+#btn-menu:checked ~ .capa {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1400; /* Asegúrate de que el z-index del fondo oscuro sea mayor que el del menú desplegable */
+}

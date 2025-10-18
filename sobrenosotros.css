@@ -1,0 +1,94 @@
+body {
+    margin:0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color:#000;
+    color:#fff;
+}
+
+.header {
+    width:100%;
+    height:70px;
+    background:#1c1c1c;
+    display:flex;
+    align-items:center;
+    position:fixed;
+    top:0;
+    z-index:100;
+}
+
+.container {
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.menu a {
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:18px;
+}
+
+.menu a:hover {
+    color:#00ccff;
+}
+
+/* Sección sobre nosotros */
+.section-about {
+    padding:120px 20px 60px 20px;
+}
+
+.container-about {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    justify-content:center;
+    gap:40px;
+}
+
+.about-logo {
+    flex:1;
+    min-width:280px;
+    text-align:center;
+}
+
+.about-logo img {
+    max-width:100%;
+    height:auto;
+    border-radius:12px;
+}
+
+.about-content {
+    flex:2;
+    min-width:300px;
+}
+
+.about-content h1 {
+    font-size:3.5rem;
+    color:#FFD700;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.about-content h2 {
+    font-size:2rem;
+    color:#00ccff;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.about-content p {
+    font-size:1.2rem;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+footer {
+    background:#0099cc;
+    color:#000;
+    text-align:center;
+    padding:15px;
+}

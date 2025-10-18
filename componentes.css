@@ -1,0 +1,98 @@
+body {
+    margin:0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color:#1a1a1a;
+    color:#fff;
+}
+
+.header {
+    width:100%;
+    height:70px;
+    background:#1c1c1c;
+    display:flex;
+    align-items:center;
+    position:fixed;
+    top:0;
+    z-index:100;
+}
+
+.container {
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.menu a {
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:18px;
+}
+
+.menu a:hover {
+    color:#FFD700;
+}
+
+.section-components {
+    padding:120px 20px 60px 20px;
+    text-align:center;
+}
+
+.section-components h2 {
+    font-size:3rem;
+    color:#FFD700;
+    margin-bottom:20px;
+}
+
+.section-components p {
+    font-size:1.2rem;
+    margin-bottom:40px;
+}
+
+.components-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.component-card {
+    background:#222;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid #333;
+    text-align:left;
+}
+
+.component-card h3 {
+    color:#00ccff;
+    margin-bottom:10px;
+}
+
+.component-card p {
+    font-size:1rem;
+    margin-bottom:10px;
+}
+
+.component-card ul {
+    list-style: disc;
+    margin-left:20px;
+    font-size:0.95rem;
+}
+
+.component-img {
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+footer {
+    background:#0099cc;
+    color:#000;
+    text-align:center;
+    padding:15px;
+}
