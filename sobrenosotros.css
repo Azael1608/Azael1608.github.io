@@ -87,8 +87,34 @@ body {
 }
 
 footer {
-    background:#0099cc;
+    background:#656262;
     color:#000;
     text-align:center;
     padding:15px;
 }
+.seccion-extra {
+    background: #000000;
+    color: #ffffff;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.seccion-extra h2 {
+    margin-top: 25px;
+    font-size: 28px;
+    border-left: 5px solid #0099cc;
+    padding-left: 10px;
+}
+
+.seccion-extra p,
+.seccion-extra ul li {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.seccion-extra ul {
+    padding-left: 20px;
+}
+
